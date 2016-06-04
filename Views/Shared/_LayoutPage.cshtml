@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>My Resume</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link href="~/green/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="~/green/js/cufon-yui.js"></script>
+    <script type="text/javascript" src="~/green/js/arial.js"></script>
+    <script type="text/javascript" src="~/green/js/cuf_run.js"></script>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header_resize">
+                <div class="logo">
+                    <h1><a href="index.html">My Resume</a></h1>
+                </div>
+                <div class="menu_nav">
+                    <ul>
+                        <li class="active">@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Education", "Education", "Home")</li>
+                        <li>@Html.ActionLink("Skills & Academics", "Skills", "Home")</li>
+                        <li>@Html.ActionLink("Courses", "courses", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+
+                    </ul>
+                </div>
+                <div class="clr"></div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content_resize">
+                <img src="~/green/images/img2.jpg" width="927" height="240" alt="" class="ctop" />
+                <div class="mainbar">
+                    @RenderBody()
+                </div>
+
+                <div class="clr"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="fbg">
+        <div class="fbg_resize">
+            <div class="col c1">
+                <h2>About Me</h2>
+                <img src="~/greenimages/white.jpg" width="66" height="66" alt="" />
+                <p>My name is Syeda Rabia .And i am doing bachelors from NCBA&e .I started my bachelors in 2014 and i am looking forward to web designer job</p>
+            </div>
+            
+            <div class="clr"></div>
+        </div>
+    </div>
+       
+        <div class="footer">
+            <div class="footer_resize">
+                <div class="col c3">
+                    <h2>Portfolio</h2>
+                    <img src="~/green/images/pix1.jpg" width="200" height="200" alt="" /> <img src="~/green/images/pix2.jpg" width="200" height="200" alt="" /> 
+                    <img src="~/green/images/pix3.jpg" width="200" height="200" alt="" /><img src="~/green/images/pix4.jpg" width="200" height="200" alt="" /> <img src="~/green/images/pix5.jpg" width="200" height="200" alt="" /> <img src="~/green/images/pix6.jpg" width="200" height="200"alt="" />
+                </div>
+                <p class="lf">&copy; Copyright MyResume. Designed by Rabia <a href="azambukharinetwork"></a></p>
+                <ul class="fmenu">
+                    <li><a href="support.html">Outlook</a></li>
+                    <li><a href="support.html">Gmail</a></li>
+                    <li><a href="blog.html">linkedIn</a></li>
+                    <li><a href="about.html">Instagram</a></li>
+                    <li><a href="contact.html">Facebook</a></li>
+                </ul>
+                <div class="clr"></div>
+            </div>
+        </div>
+    </div>
+    
+  
+</body>
+</html>
+
+</html>

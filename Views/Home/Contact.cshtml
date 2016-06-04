@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+<h2>Contact</h2>
+<section class="contact" id="contact">
+    <div class="container">
+        <div class="heading">
+
+            <h3>
+                You can contact me through following mediums <br>
+            </h3>
+        </div>
+    </div>
+
+    <div class="mainbar">
+        
+        <div class="article">
+            <h2>Send us mail</h2>
+            <form action="/Home/Add" method="post" id="sendemail">
+                <ol>
+                    <li>
+                        <label for="name">Name (required)</label>
+                        <input id="name" name="name" class="text" />
+                    </li>
+                    <li>
+                        <label for="email">Email Address (required)</label>
+                        <input id="email" name="email" class="text" />
+                    </li>
+                    <li>
+                        <label for="website">Website</label>
+                        <input id="website" name="website" class="text" />
+                    </li>
+                    <li>
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="8" cols="50"></textarea>
+                    </li>
+                    <li>
+                        <input type="submit" name="imageField" id="imageField" src="~/green/images/submit.gif" class="send" />
+                        <div class="clr"></div>
+                    </li>
+                </ol>
+            </form>
+        </div>
+    </div>
